@@ -1,0 +1,43 @@
+<apex:page controller="Assignment5Q1P4Controller">
+  <apex:slds />
+  <apex:form>
+    <apex:pageBlock>
+      <h1>
+        Account
+      </h1>
+      <apex:pageBlockSection>
+        <apex:pageBlockSectionItem>
+          <apex:outputLabel>Name</apex:outputLabel>
+          <apex:inputText id="Name" value="{!acc.name}" />
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem>
+          <apex:outputLabel>Phone</apex:outputLabel>
+          <apex:inputText id="Phone" value="{!acc.phone}" />
+        </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+      <h1>
+        Opportunity
+      </h1>
+      <apex:pageBlockSection>
+        <apex:pageBlockSectionItem>
+          <apex:outputLabel>Name</apex:outputLabel>
+          <apex:inputText id="Name" value="{!opp.name}" />
+        </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+      <h1>
+        Contact
+      </h1>
+      <apex:pageBlockSection>
+        <apex:pageBlockSectionItem>
+          <apex:outputLabel>First Name</apex:outputLabel>
+          <apex:inputText id="First" value="{!con.FirstName}" />
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem>
+          <apex:outputLabel>Last Name</apex:outputLabel>
+          <apex:inputText id="Last" value="{!con.LastName}" />
+        </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+      <apex:commandButton id="Save" action="{!saveRecord}" value="Save" />
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>
